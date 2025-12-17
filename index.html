@@ -1,13 +1,404 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>sae3.03</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mister Brocolis</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/reset.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="src/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="nav-bar">
+    <section class="nav-bar_logo">
+      <figure class="nav-logo-wrapper">
+        <img src="./asset/Mister brocolis sans membre.svg" alt="Logo Mister Brocolis" class="nav-logo" />
+      </figure>
+      <p class="nav-subtitle">Mister brocolis</p>
+    </section>
+    <a href="#contacts" class="nav-link">Contacts</a>
+  </header>
+
+  <main>
+
+
+    <!-- Slide 1 -->
+    <section class="slide slide-1">
+      <div class="slide-inner">
+        <h1 class="slide-title">Mieux manger, moins gaspiller, moins polluer.</h1>
+        <p class="slide-text">
+          Adopter une alimentation plus saine, réduire le gaspillage et limiter la pollution,
+          c’est prendre soin de soi et de la planète.
+          Mister Brocolis nous accompagne dans cette aventure.
+        </p>
+      </div>
+      <div class="slide__pager">
+        <span class="slide__pager-text">1/26</span>
+      </div>
+    </section>
+
+
+    <!-- Slide 2 -->
+    <section class="slide slide-2" id="section-slide-2">
+      <figure class="slide-2__pile">
+        <img src="./asset/Tas de déchets.svg" alt="Tas de nourriture gaspillée" class="slide-2__pile-image"
+          id="tas-dechets" />
+        <img src="./asset/Mister brocolis qui tombre.svg" alt="Mister Brocolis" class="slide-2__brocoli"
+          id="mister-brocoli" />
+      </figure>
+
+      <section class="slide-2__content">
+        <p class="slide-2__intro">Le nombre de tonnes de nourritures gaspillés chaque années en France est:</p>
+        <p class="slide-2__number">4.3 Millions</p>
+        <p class="slide-2__intro">
+          C'est 65 kg par habitant, soit 86000 camions ou de quoi nourrir 10millions de personnes.
+        </p>
+      </section>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">2/26</span>
+      </div>
+    </section>
+    <!-- Slide 3 -->
+
+    <section class="slide-3">
+      <figure class="slide-3__house">
+        <img src="./asset/Maison.svg" alt="Tas de nourriture gaspillée" />
+      </figure>
+
+      <figure class="slide-3__brocoli">
+        <img src="./asset/Mister brocolis assi.svg" alt="Mister Brocolis" />
+      </figure>
+
+      <div class="slide-3_Texte">
+        <p class="slide-3__intro">
+          Le nombre de tonnes de nourritures<br />
+          gaspillés chaque années en France est:
+        </p>
+
+        <p class="slide-3__number">4.3 Millions</p>
+
+        <p class="slide-3__text">
+          Ce chiffre représente l'équivalent de 65 kg de nourriture jetée par habitant,
+          soit suffisamment pour remplir 86 000 camions ou nourrir 10millions
+          de personnes pendant un an.
+        </p>
+      </div>
+      <div class="slide__pager">
+        <span class="slide__pager-text">3/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide-4">
+      <p class="slide-4__text-top">
+        Chaque Français gaspille en moyenne 30kg de nourriture par an, dont 7kg d'aliments
+        encore emballés, représentant une perte économique d'environ 100euros par habitant.
+      </p>
+
+      <figure class="slide-4__image">
+        <img src="./asset/Billet.svg" alt="Valeur de la nourriture gaspillée" />
+      </figure>
+
+      <p class="slide-4__text-bottom">
+        Cette nourriture jetée était parfaitement consommable mais a été oubliée, mal conservée
+        ou préparée en trop grande quantité.
+      </p>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">4/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+
+    <section class="slide-5">
+      <header class="slide-5__header">
+        <h2 class="slide-5__title">Pertes dans la production de....</h2>
+        <p class="slide-5__number">22%</p>
+
+        <p class="slide-5__text">
+          Des aliments sont écartés à cause des normes esthétiques strictes, des conditions climatiques difficiles lors
+          de la
+          récolte ou des problèmes de transport vers les centres de collecte.
+          Cette étape représente la plus grande source de gaspillage après la consommation, avec des millions de tonnes
+          de fruits
+          et légumes parfaitement comestibles mais jugés trop petits, trop gros ou simplement difformes.
+        </p>
+
+        <figure class="slide-5__image">
+          <img src="./asset/Brocolis sous terre.svg" alt="Transformation des aliments" />
+        </figure>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">6/26</span>
+        </div>
+
+      </header>
+    </section>
+    <!-- Slide 6 -->
+
+    <section class="slide-6">
+      <header class="slide-6__header">
+        <h2 class="slide-6__title">Pertes dans la transformation de....</h2>
+        <p class="slide-6__number">14%</p>
+
+        <p class="slide-6__text">
+          Ces pertes concernent notamment les parties non commercialisables, les erreurs de calibrage ou les défauts
+          d'aspect.
+          À l'échelle mondiale, cette étape gaspille chaque année suffisamment de nourriture pour nourrir 500 millions
+          de
+          personnes pendant un an.
+        </p>
+
+        <figure class="slide-6__image">
+          <img src="./asset/Brocolis usine.svg" alt="Transformation des aliments" />
+        </figure>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">6/26</span>
+        </div>
+
+      </header>
+    </section>
+
+
+    <!-- Slide 7   -->
+    <section class="slide-7">
+      <header class="slide-7__header">
+        <h2 class="slide-7__title">Pertes dans la distribution de....</h2>
+        <p class="slide-7__number">12%</p>
+
+        <p class="slide-7__text">
+          Ces pertes sont dues à une mauvaise conservation, des chocs durant le transport ou des délais d'acheminement
+          trop longs.
+          En Europe, cela représente environ 9 millions de tonnes de nourriture perdues chaque année rien que lors de
+          cette étape,
+          soit l'équivalent de 18 kg par personne gaspillés avant même d'arriver en rayon.
+        </p>
+
+        <figure class="slide-7__image">
+          <img src="./asset/Camion de brocolis.svg" alt="Transformation des aliments" />
+        </figure>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">6/26</span>
+        </div>
+
+      </header>
+    </section>
+
+    <!-- Slide 8 -->
+    <section class="slide-8">
+      <header class="slide-8__header">
+        <h2 class="slide-8__title">Pertes dans la consomation de....</h2>
+        <p class="slide-8__number">52%</p>
+
+        <p class="slide-8__text">
+          Les aliments sont jetés parce qu'ils ne sont pas utilisés à temps, mal conservés, ou simplement oubliés au
+          fond du
+          réfrigérateur.
+          En France, cela représente environ 30 kg de nourriture gaspillée par personne et par an, dont 7 kg encore
+          emballés, soit
+          l'équivalent de 100 repas jetés à la poubelle chaque année.
+        </p>
+
+        <figure class="slide-8__image">
+          <img src="./asset/Frigo.svg" alt="Transformation des aliments" />
+        </figure>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">6/26</span>
+        </div>
+
+      </header>
+    </section>
+
+
+
+    <!-- Slide 9 -->
+
+    <section class="slide-9" aria-label="Slide 9 - plats préparés">
+      <header class="slide-9__header">
+        <p class="slide-9__intro">
+          Depuis 1960,<br />
+          la consomation de plats préparés s’accroît de
+        </p>
+
+        <p class="slide-9__percentage">4,4%</p>
+
+        <p class="slide-9__per-capita">par an et par habitant</p>
+      </header>
+
+      <main class="slide-9__content">
+        <figure class="slide-9__dish-left">
+          <img class="slide-9__image" src="./asset/Boite de brocolis.svg" alt="Plat préparé à gauche" />
+        </figure>
+
+        <figure class="slide-9__dish-center">
+          <img class="slide-9__image" src="./asset/Assiette.svg" alt="Plat préparé au centre" />
+        </figure>
+
+        <figure class="slide-9__broccoli-character">
+          <img class="slide-9__image" src="./asset/Mister brocolis choquer.svg" alt="Mister Brocoli" />
+        </figure>
+      </main>
+
+      <div class="slide-9__div">
+        <p class="slide-9__description">
+          Ces aliments pratiques remplacent souvent les repas faits maison. Cette
+          tendance influence nos habitudes alimentaires et la manière dont nous
+          gérons notre nourriture.
+        </p>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">9/26</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10 -->
+
+
+    <section class="slide-10" aria-label="Slide 9 - plats préparés">
+      <header class="slide-10__header">
+        <p class="slide-10__intro">
+          Les Français jettent chaque année...
+        </p>
+
+        <p class="slide-10__percentage">1.2</p>
+
+        <p class="slide-10__per-capita">millions de tonnes d'emballages plastiques par en et par habitant</p>
+      </header>
+
+      <main class="slide-10__content">
+        <figure class="slide-10__dish-left">
+          <img class="slide-10__image" src="./asset/Boite de brocolis.svg" alt="Plat préparé à gauche" />
+        </figure>
+
+        <figure class="slide-10__dish-center">
+          <img class="slide-10__image" src="./asset/Tortue.svg" alt="Plat préparé au centre" />
+        </figure>
+
+        <figure class="slide-10__broccoli-character">
+          <img class="slide-10__image" src="./asset/Mister brocolis sous leau.svg" alt="Mister Brocoli" />
+        </figure>
+      </main>
+
+      <div class="slide-10__div">
+        <p class="slide-10__description">
+          Une grande partie finit dans les océans, polluant la vie marine. Réduire ces déchets est essentiel pour
+          protéger nos
+          mers et notre planète.
+        </p>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">10/26</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Slide 11 -->
+
+    <section class="slide-11">
+      <p class="slide-11_text">
+        Mais le gaspillage et la perte de nourriture entraînent une pollution significative
+
+      </p>
+    </section>
+
+
+
+    <!-- Slide 12 -->
+
+    <section class="slide-12" aria-label="Slide 12 - impact environnemental du gaspillage">
+      <header class="slide-12__header">
+        <p class="slide-12__text-main">
+          Chaque aliment jeté a nécessité de l'eau, de l'énergie et des terres pour être
+          produit, transformé et transporté, des ressources gaspillées qui auraient pu
+          être évitées.
+        </p>
+
+        <p class="slide-12__text-sub">
+          Au total, le gaspillage alimentaire génère 3,3 milliards de tonnes de CO₂ par
+          an dans le monde, soit l'équivalent des émissions annuelles de 700 millions
+          de voitures.
+        </p>
+
+      </header>
+
+      <figure class="slide-12__greenhouse">
+        <img class="slide-12__image" src="./asset/Serre.svg" alt="Serre avec nuage de gaz à effet de serre" />
+      </figure>
+
+      <figure class="slide-12__broccoli">
+        <img class="slide-12__image" src="./asset/Mister brocolis normal.svg" alt="Mister Brocoli" />
+      </figure>
+
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">12/26</span>
+      </div>
+
+    </section>
+  </main>
+
+
+<section class="slide-13">
   
-    <h1>Hello Vite + Vanilla JS!</h1>
-  </body>
+  <header class="slide-13__header">
+    <h2 class="slide-13__title">
+      Secteurs les plus émetteur de gaz à effet de serre à l’échelle mondiale :
+    </h2>
+    
+    <p class="slide-13__text">
+      La production de viande, les cultures intensives et le transport des aliments sont parmi les
+      principaux responsables des émissions de gaz à effet de serre dans l'alimentation. L'alimentation
+      arrive en troisième position des secteurs les plus polluants après les transports et les
+      habitations, représentant environ un quart de notre empreinte carbone individuelle.
+    </p>
+  </header>
+    <div class="slide-13__inner">
+
+    <div class="slide-13__image">
+      <img src="./asset/Podium.svg" alt="Podium des émissions de gaz à effet de serre" />
+    </div>
+
+    <div class="slide__pager">
+      <span class="slide__pager-text">13/26</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
 </html>

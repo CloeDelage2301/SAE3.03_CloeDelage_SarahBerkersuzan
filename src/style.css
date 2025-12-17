@@ -1,97 +1,712 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@300..700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+/* NAVBAR */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 6rem;
+  background-color: #f6f0e4;
+  box-shadow: 0 0.25rem 0.7125rem rgba(0, 0, 0, 0.25);
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #1a1a1a;
+  align-items: center;
+  padding: 0 2rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.nav-logo-wrapper {
+  margin: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-top: -0.9375rem;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.nav-logo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nav-subtitle {
+  margin: 0;
+  font-family: "Bagel Fat One", cursive, system-ui;
+  font-size: 0.625rem;
+  color: #2a4b1b;
+  transform: translate(0, 1.25rem);
+}
+
+.nav-link {
+  font-family: "Bagel Fat One", cursive, system-ui;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2a4b1b;
+  margin-left: auto;
+  transform: translateY(-0.3125rem);
+}
+
+
+/* SLIDE 1 */
+
+.slide-1 {
+  height: 100vh;
+  background-color: #96d146;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slide-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  max-width: 65rem;
+  padding: 0 1rem;
+}
+
+.slide-title {
+  font-family: "Bagel Fat One", cursive, system-ui;
+  line-height: 1.05;
+  color: #2a4b1b;
+  font-size: 8rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.slide-text {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+.slide-text.center {
+  text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+
+.slide__pager {
+  margin-top: 2rem;
+  border: 2px solid #F6F0E4;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.slide__pager-text{
+  font-size: 10rem;
+  color: #F6F0E4;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+
+/* SLIDE 2 */
+
+.slide-2 {
+  position: relative;
+  min-height: 100vh;
+  background-color: #ffdc11;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  padding: 5rem 5rem;
+  box-sizing: border-box;
+}
+
+.slide-2__pile {
+  position: relative;
+  margin: 0;
+  height: 80vh;
+  max-height: 45rem;
+}
+
+.slide-2__pile-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide-2__brocoli {
+  left: 5%;
+  top: -20%;
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.slide-2__content {
+  margin-left: auto;
+  text-align: right;
+  color: #fff4b7;
+}
+
+.slide-2__intro {
+  margin: 0 0 2.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.slide-2__number {
+  margin: 0 0 2.5rem;
+  font-family: "Bagel Fat One", system-ui, cursive;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+/* SLIDE 3 */
+
+.slide-3 {
+  position: relative;
+  height: 100vh;
+  background: #FFBB3D;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+
+}
+
+
+.slide-3__house {
+  position: absolute;
+  left: -0.625rem;
+  top: 1.25rem;
+  width: 70%;
+  height: 57.5rem;
+  margin: 0;
+}
+
+.slide-3__house img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.slide-3__brocoli {
+  position: absolute;
+  left: 8%;
+  bottom: 35%;
+  width: 14%;
+  height: auto;
+  margin: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.slide-3__brocoli img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.slide-3__intro,
+.slide-3__number,
+.slide-3__text {
+  text-align: right;
+  right: 4.375rem;
+  color: #fff4b7;
+  text-align: right;
+  margin: 0;
+}
+
+.slide-3__intro {
+  top: 15rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.slide-3__number {
+  top: 20.625rem;
+  font-family: "Bagel Fat One", cursive, system-ui;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.slide-3__text {
+  top: 35rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.slide-3_Texte {
+  position: absolute;
+  right: 4.375rem;
+  top: 15rem;
+  max-width: 28.75rem;
+  z-index: 5;
+}
+
+
+/* SLIDE 4 */
+.slide-4 {
+
+  margin: 0 auto;
+  background: #ff80b9;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.slide-4__text-top {
+  grid-area: 1 / 1 / 2 / 4;
+  align-self: center;
+  justify-self: center;
+  max-width: 68.75rem;
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.45;
+  color: #732548;
+
+}
+
+.slide-4__image {
+  grid-area: 2 / 2 / 5 / 5;
+  align-self: center;
+  justify-self: center;
+  width: 45rem;
+  height: 30rem;
+  margin: 0;
+}
+
+.slide-4__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.slide-4__text-bottom {
+  grid-area: 5 / 4 / 6 / 5;
+  align-self: center;
+  justify-self: center;
+  max-width: 68.75rem;
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: #732548;
+  text-align: center;
+  padding-right: 3rem;
+}
+
+/* SLIDE 5 */
+
+.slide-5 {
+  background: #3DBAEF;
+  color: #B5E9FF;
+}
+
+.slide-5__header,
+.slide-6__header,
+.slide-7__header,
+.slide-8__header {
+  max-width: 90rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 5rem 5rem 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.slide-5__title,
+.slide-6__title,
+.slide-7__title,
+.slide-8__title {
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+.slide-5__number,
+.slide-6__number,
+.slide-7__number,
+.slide-8__number {
+  margin: 0;
+  font-family: "Bagel Fat One", cursive, system-ui;
+  font-size: 5rem;
+  line-height: 1;
+  white-space: nowrap;
+  display: flex;
+  justify-content: end;
+}
+
+.slide-5__text,
+.slide-6__text,
+.slide-7__text,
+.slide-8__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 48.9375rem;
+}
+
+
+.slide-5__image,
+.slide-6__image,
+.slide-7__image,
+.slide-8__image {
+  margin: 0 auto 2.5rem;
+  width: 100%;
+  max-width: 64.8125rem;
+}
+
+.slide-5__image img,
+.slide-6__image img,
+.slide-7__image img,
+.slide-8__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* SLIDE 6 */
+
+.slide-6 {
+  background: #ffdc11;
+  color: #fff4b7;
+}
+
+/* SLIDE 7 */
+
+.slide-7 {
+  background: #FF80B9;
+  color: #732548;
+
+}
+
+/* SLIDE 8 */
+
+.slide-8 {
+  background: #96D146;
+  color: #DAFFA8;
+
+}
+
+
+.slide-10 {
+
+  height: 960px;
+  background-color: #3DBAEF;
+  overflow: hidden;
+  color: #F5F5F5;
+  display: grid;
+  grid-template-rows: 250px auto 134px;
+  padding: 0 163px;
+}
+
+.slide-9 {
+  height: 960px;
+  background-color: #ffbb3d;
+  overflow: hidden;
+  color: #84611F;
+  display: grid;
+  grid-template-rows: 250px auto 134px;
+  padding: 0 163px;
+}
+
+
+.slide-9__header,
+.slide-10__header {
+  display: grid;
+  grid-template-areas: "overlay";
+  align-items: start;
+}
+
+.slide-9__intro,
+.slide-10__intro {
+  grid-area: overlay;
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  padding-top: 45px;
+  padding-bottom: 23px;
+}
+
+.slide-9__percentage,
+.slide-10__percentage {
+  grid-area: overlay;
+  align-self: start;
+  margin: 0;
+  font-family: "Bagel Fat One", system-ui, sans-serif;
+  font-style: normal;
+  font-size: 128px;
+  line-height: 1;
+  margin-top: 113px;
+  width: 381px;
+}
+
+.slide-9__per-capita,
+.slide-10__per-capita {
+  grid-area: overlay;
+  transform: translate(392px, 225px);
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.slide-9__content,
+.slide-10__content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: start;
+  margin-top: 0;
+}
+
+.slide-9__dish-left,
+.slide-10__dish-left {
+  grid-column: 1 / 2;
+  align-self: start;
+  justify-self: center;
+  margin-top: 150px;
+  width: 323px;
+  height: 197px;
+  margin-left: 0;
+}
+
+.slide-9__dish-center,
+.slide-10__dish-center {
+  grid-column: 2 / 3;
+  align-self: start;
+  justify-self: center;
+  margin-top: 100px;
+  width: 504px;
+  height: 402px;
+  margin-left: 0;
+}
+
+.slide-9__broccoli-character,
+.slide-10__broccoli-character {
+  grid-column: 3 / 4;
+  align-self: start;
+  justify-self: center;
+  margin-top: 150px;
+  width: 128px;
+  height: 197px;
+  margin-left: 0;
+}
+
+.slide-9__footer,
+.slide-10__footer {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 80px;
+}
+
+.slide-9__description,
+.slide-10__description {
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  padding-left: 0;
+}
+
+
+
+/* SLIDE 11 */
+.slide-11 {
+  height: 100vh;
+  font-family: 'bagel fat one', cursive, system-ui;
+  background-color: #FFDC11;
+  color: #FFF4B7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 7vw, 7rem);
+}
+
+.slide-11_text {
+  margin: 0;
+  text-align: center;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
+
+/* SLIDE 12 */
+
+.slide-12 {
+  height: 100vh;
+  background-color: #ff80b9;
+  overflow: hidden;
+  color: #732548;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Ajustement des proportions des lignes pour remonter le texte */
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  /* Réduction du padding-top pour remonter tout le contenu */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.slide-12__header {
+  /* Remonter le texte principal en lui donnant plus de lignes (Ligne 1 et 2) */
+  grid-area: 1 / 1 / 3 / 2;
+  align-self: end;
+  padding-right: 10rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.slide-12__text-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.slide-12__content {
+  /* Placement inchangé par rapport à la grille précédente */
+  grid-area: 3 / 1 / 4 / 2;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: start;
+  justify-items: center;
+
+  padding-right: 0;
+}
+
+.slide-12__greenhouse,
+.slide-12__broccoli {
+  /* L'illustration doit toujours chevaucher l'espace principal (Lignes 1 et 2) */
+  grid-area: 1 / 2 / 3 / 3;
+
+  align-self: center;
+  justify-self: center;
+
+  width: 80%;
+  max-width: 500px;
+  /* Réduction ou suppression de padding-top pour centrage vertical plus serré */
+  padding-top: 0;
+}
+
+.slide-12__broccoli {
+  align-self: end;
+  justify-self: start;
+  width: 30%;
+  margin-left: 10%;
+  margin-bottom: -5%;
+  z-index: 10;
+}
+
+.slide-12__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.slide-12__text-sub {
+  /* Mappé à la Ligne 3 */
+  align-self: start;
+  padding-right: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.slide__pager {
+  grid-area: 3 / 2 / 4 / 3;
+  align-self: end;
+  justify-self: end;
+  padding-bottom: 0;
+}
+
+.slide__pager-text {
+  font-size: 0.75rem;
+  color: rgba(26, 26, 26, 0.7);
+}
+
+/* SLIDE 13 */
+
+.slide-13 {
+  background: #96d146;
+  color: #daffa8;
+}
+
+
+.slide-13__header {
+  padding: 4rem;
+}
+
+
+
+.slide-13__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 80px 80px 64px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 0;
+}
+
+
+.slide-13__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.slide-13__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.slide-13__image {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-13__image img {
+  display: block;
+  width: 100%;
+  max-width: 949px;
+  height: auto;
+  object-fit: contain;
 }
