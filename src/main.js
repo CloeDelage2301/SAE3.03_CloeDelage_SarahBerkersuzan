@@ -868,6 +868,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     console.log('✅ Animations GSAP avec barre de progression chargées !');
-});
-
+})
 
