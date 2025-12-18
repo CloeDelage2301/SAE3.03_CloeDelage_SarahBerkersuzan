@@ -10,6 +10,7 @@ html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+    scroll-snap-type: y mandatory;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -35,8 +36,14 @@ body {
     font-family: "Quicksand", sans-serif;
     background-color: #ffffff;
     overflow-x: hidden;
+
+    
 }
 
+.scroll-snap{
+    
+    scroll-snap-align: start;
+}
 /* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
