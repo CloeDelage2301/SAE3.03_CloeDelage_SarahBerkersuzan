@@ -94,3 +94,20 @@ textarea:not([rows]) {
 :target {
     scroll-margin-block: 5ex;
 }
+
+:root{
+
+    --clr-jaune: #FFDC11;
+    --clr-jaune-clair: #FFF4B7;
+    --clr-vert : #96D146;
+    --clr-vert-fonce: #2A4B1B;
+    --clr-vert-clair: #e6ffb5; 
+    --clr-orange: #FFBB3D;
+    --clr-orange-fonce : #84611F;
+    --clr-rose: #FF80B9;
+    --clr-rose-clair: #ffd6e8;
+    --clr-rose-fonce: #732548;
+    --clr-bleu: #3DBAEF;
+    --clr-bleu-clair: #B5E9FF;
+    --clr-beige: #F6F0E4
+}

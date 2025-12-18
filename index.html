@@ -2,10 +2,13 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Mister Brocolis</title>
-  <link rel="stylesheet" href="src/style.css" />
-  <link rel="stylesheet" href="src/reset.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mister Brocolis - Réduire le gaspillage alimentaire</title>
+  <meta name="description"
+    content="Découvrez comment mieux manger, moins gaspiller et moins polluer avec Mister Brocolis">
+  <link rel="stylesheet" href="src/reset.css">
+  <link rel="stylesheet" href="src/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="src/main.js" defer></script>
@@ -14,25 +17,24 @@
 <body>
 
   <header class="nav-bar">
-    <section class="nav-bar_logo">
-      <figure class="nav-logo-wrapper">
-        <img src="./asset/Mister brocolis sans membre.svg" alt="Logo Mister Brocolis" class="nav-logo" />
-      </figure>
+    <div class="nav-bar_logo">
+      <div class="nav-logo-wrapper">
+        <img src="./asset/Mister brocolis sans membre.svg" alt="Logo Mister Brocolis" class="nav-logo">
+      </div>
       <p class="nav-subtitle">Mister brocolis</p>
-    </section>
+    </div>
     <a href="#contacts" class="nav-link">Contacts</a>
   </header>
 
   <main>
 
-
-    <!-- Slide 1 -->
+    <!-- Slide 1-->
     <section class="slide slide-1 scroll-snap">
       <div class="slide-inner">
         <h1 class="slide-title">Mieux manger, moins gaspiller, moins polluer.</h1>
         <p class="slide-text">
           Adopter une alimentation plus saine, réduire le gaspillage et limiter la pollution,
-          c’est prendre soin de soi et de la planète.
+          c'est prendre soin de soi et de la planète.
           Mister Brocolis nous accompagne dans cette aventure.
         </p>
       </div>
@@ -41,68 +43,69 @@
       </div>
     </section>
 
-
     <!-- Slide 2 -->
     <section class="slide slide-2 scroll-snap" id="section-slide-2">
-      <figure class="slide-2__pile">
+      <div class="slide-2__pile">
         <img src="./asset/Tas de déchets.svg" alt="Tas de nourriture gaspillée" class="slide-2__pile-image"
-          id="tas-dechets" />
-        <img src="./asset/Mister brocolis qui tombre.svg" alt="Mister Brocolis" class="slide-2__brocoli"
-          id="mister-brocoli" />
-      </figure>
+          id="tas-dechets">
+        <img src="./asset/Mister brocolis qui tombre.svg" alt="Mister Brocolis tombant" class="slide-2__brocoli"
+          id="mister-brocoli">
+      </div>
 
-      <section class="slide-2__content">
+      <div class="slide-2__content">
         <p class="slide-2__intro">Le nombre de tonnes de nourritures gaspillés chaque années en France est:</p>
         <p class="slide-2__number">4.3 Millions</p>
         <p class="slide-2__intro">
           C'est 65 kg par habitant, soit 86000 camions ou de quoi nourrir 10millions de personnes.
         </p>
-      </section>
+      </div>
 
       <div class="slide__pager">
         <span class="slide__pager-text">2/26</span>
       </div>
     </section>
+
     <!-- Slide 3 -->
+    <section class="slide slide-3 scroll-snap">
+      <div class="slide-3__house">
+        <img src="./asset/Maison.svg" alt="Maison représentant les ménages">
+      </div>
 
-    <section class="slide-3 scroll-snap">
-      <figure class="slide-3__house">
-        <img src="./asset/Maison.svg" alt="Tas de nourriture gaspillée" />
-      </figure>
-
-      <figure class="slide-3__brocoli">
-        <img src="./asset/Mister brocolis assi.svg" alt="Mister Brocolis" />
-      </figure>
+      <div class="slide-3__brocoli">
+        <img src="./asset/Mister brocolis assi.svg" alt="Mister Brocolis assis">
+      </div>
 
       <div class="slide-3_Texte">
         <p class="slide-3__intro">
-          Le nombre de tonnes de nourritures<br />
-          gaspillés chaque années en France est:
+          En France, les ménages sont responsables de
         </p>
 
-        <p class="slide-3__number">4.3 Millions</p>
+        <p class="slide-3__number">46%</p>
 
         <p class="slide-3__text">
-          Ce chiffre représente l'équivalent de 65 kg de nourriture jetée par habitant,
-          soit suffisamment pour remplir 86 000 camions ou nourrir 10millions
-          de personnes pendant un an.
+          Soit la part la plus importante de tous les acteurs de la chaîne. Une grande partie de cette nourriture jetée
+          est encore
+          parfaitement consommable : fruits et légumes flétris, restes de repas, produits dont la date est dépassée,
+          représentant
+          environ 30 kg par personne et par an.
         </p>
       </div>
+
       <div class="slide__pager">
         <span class="slide__pager-text">3/26</span>
       </div>
     </section>
 
-    <!-- Slide 4 -->
-    <section class="slide-4 scroll-snap">
+    <!-- Slide 4-->
+    <section class="slide slide-4 scroll-snap">
       <p class="slide-4__text-top">
         Chaque Français gaspille en moyenne 30kg de nourriture par an, dont 7kg d'aliments
         encore emballés, représentant une perte économique d'environ 100euros par habitant.
       </p>
 
-      <figure class="slide-4__image">
-        <img src="./asset/Billet.svg" alt="Valeur de la nourriture gaspillée" />
-      </figure>
+      <div class="slide-4__image">
+        <img src="./asset/Billet.svg" alt="Billets représentant la valeur de la nourriture gaspillée">
+      </div>
 
       <p class="slide-4__text-bottom">
         Cette nourriture jetée était parfaitement consommable mais a été oubliée, mal conservée
@@ -114,35 +117,31 @@
       </div>
     </section>
 
-    <!-- Slide 5 -->
-
-    <section class="slide-5 scroll-snap">
+    <!-- Slide 5-->
+    <section class="slide slide-5 scroll-snap">
       <header class="slide-5__header">
         <h2 class="slide-5__title">Pertes dans la production de....</h2>
         <p class="slide-5__number">22%</p>
 
         <p class="slide-5__text">
           Des aliments sont écartés à cause des normes esthétiques strictes, des conditions climatiques difficiles lors
-          de la
-          récolte ou des problèmes de transport vers les centres de collecte.
+          de la récolte ou des problèmes de transport vers les centres de collecte.
           Cette étape représente la plus grande source de gaspillage après la consommation, avec des millions de tonnes
-          de fruits
-          et légumes parfaitement comestibles mais jugés trop petits, trop gros ou simplement difformes.
+          de fruits et légumes parfaitement comestibles mais jugés trop petits, trop gros ou simplement difformes.
         </p>
 
-        <figure class="slide-5__image">
-          <img src="./asset/Brocolis sous terre.svg" alt="Transformation des aliments" />
-        </figure>
-
-        <div class="slide__pager">
-          <span class="slide__pager-text">5/26</span>
+        <div class="slide-5__image">
+          <img src="./asset/Brocolis sous terre.svg" alt="Brocolis en phase de production agricole">
         </div>
-
       </header>
-    </section>
-    <!-- Slide 6 -->
 
-    <section class="slide-6 scroll-snap">
+      <div class="slide__pager">
+        <span class="slide__pager-text">5/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 6 -->
+    <section class="slide slide-6 scroll-snap">
       <header class="slide-6__header">
         <h2 class="slide-6__title">Pertes dans la transformation de....</h2>
         <p class="slide-6__number">14%</p>
@@ -151,24 +150,21 @@
           Ces pertes concernent notamment les parties non commercialisables, les erreurs de calibrage ou les défauts
           d'aspect.
           À l'échelle mondiale, cette étape gaspille chaque année suffisamment de nourriture pour nourrir 500 millions
-          de
-          personnes pendant un an.
+          de personnes pendant un an.
         </p>
 
-        <figure class="slide-6__image">
-          <img src="./asset/Brocolis usine.svg" alt="Transformation des aliments" />
-        </figure>
-
-        <div class="slide__pager">
-          <span class="slide__pager-text">6/26</span>
+        <div class="slide-6__image">
+          <img src="./asset/Brocolis usine.svg" alt="Usine de transformation des aliments">
         </div>
-
       </header>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">6/26</span>
+      </div>
     </section>
 
-
-    <!-- Slide 7   -->
-    <section class="slide-7 scroll-snap">
+    <!-- Slide 7-->
+    <section class="slide slide-7 scroll-snap">
       <header class="slide-7__header">
         <h2 class="slide-7__title">Pertes dans la distribution de....</h2>
         <p class="slide-7__number">12%</p>
@@ -177,56 +173,48 @@
           Ces pertes sont dues à une mauvaise conservation, des chocs durant le transport ou des délais d'acheminement
           trop longs.
           En Europe, cela représente environ 9 millions de tonnes de nourriture perdues chaque année rien que lors de
-          cette étape,
-          soit l'équivalent de 18 kg par personne gaspillés avant même d'arriver en rayon.
+          cette étape, soit l'équivalent de 18 kg par personne gaspillés avant même d'arriver en rayon.
         </p>
 
-        <figure class="slide-7__image">
-          <img src="./asset/Camion de brocolis.svg" alt="Transformation des aliments" />
-        </figure>
-
-        <div class="slide__pager">
-          <span class="slide__pager-text">7/26</span>
+        <div class="slide-7__image">
+          <img src="./asset/Camion de brocolis.svg" alt="Camion de distribution de nourriture">
         </div>
-
       </header>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">7/26</span>
+      </div>
     </section>
 
     <!-- Slide 8 -->
-    <section class="slide-8 scroll-snap">
+    <section class="slide slide-8 scroll-snap">
       <header class="slide-8__header">
         <h2 class="slide-8__title">Pertes dans la consomation de....</h2>
         <p class="slide-8__number">52%</p>
 
         <p class="slide-8__text">
           Les aliments sont jetés parce qu'ils ne sont pas utilisés à temps, mal conservés, ou simplement oubliés au
-          fond du
-          réfrigérateur.
+          fond du réfrigérateur.
           En France, cela représente environ 30 kg de nourriture gaspillée par personne et par an, dont 7 kg encore
-          emballés, soit
-          l'équivalent de 100 repas jetés à la poubelle chaque année.
+          emballés, soit l'équivalent de 100 repas jetés à la poubelle chaque année.
         </p>
 
-        <figure class="slide-8__image">
-          <img src="./asset/Frigo.svg" alt="Transformation des aliments" />
-        </figure>
-
-        <div class="slide__pager">
-          <span class="slide__pager-text">8/26</span>
+        <div class="slide-8__image">
+          <img src="./asset/Frigo.svg" alt="Réfrigérateur avec aliments">
         </div>
-
       </header>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">8/26</span>
+      </div>
     </section>
 
-
-
-    <!-- Slide 9 -->
-
-    <section class="slide-9 scroll-snap" aria-label="Slide 9 - plats préparés scroll-snap">
+    <!-- Slide 9-->
+    <section class="slide slide-9 scroll-snap">
       <header class="slide-9__header">
         <p class="slide-9__intro">
-          Depuis 1960,<br />
-          la consomation de plats préparés s’accroît de
+          Depuis 1960,<br>
+          la consomation de plats préparés s'accroît de
         </p>
 
         <p class="slide-9__percentage">4,4%</p>
@@ -234,21 +222,21 @@
         <p class="slide-9__per-an">par an et par habitant</p>
       </header>
 
-      <main class="slide-9__content">
-        <figure class="slide-9__dish-left">
-          <img class="slide-9__image" src="./asset/Boite de brocolis.svg" alt="Plat préparé à gauche" />
-        </figure>
+      <div class="slide-9__content">
+        <div class="slide-9__dish-left">
+          <img src="./asset/Boite de brocolis.svg" alt="Boîte de brocolis préparés">
+        </div>
 
-        <figure class="slide-9__dish-center">
-          <img class="slide-9__image" src="./asset/Assiette.svg" alt="Plat préparé au centre" />
-        </figure>
+        <div class="slide-9__dish-center">
+          <img src="./asset/Assiette.svg" alt="Assiette de plat préparé">
+        </div>
 
-        <figure class="slide-9__broccoli">
-          <img class="slide-9__image" src="./asset/Mister brocolis choquer.svg" alt="Mister Brocoli" />
-        </figure>
-      </main>
+        <div class="slide-9__broccoli">
+          <img src="./asset/Mister brocolis choquer.svg" alt="Mister Brocoli choqué">
+        </div>
+      </div>
 
-      <div class="slide-9">
+      <div class="slide-9__footer">
         <p class="slide-9__description">
           Ces aliments pratiques remplacent souvent les repas faits maison. Cette
           tendance influence nos habitudes alimentaires et la manière dont nous
@@ -261,39 +249,36 @@
       </div>
     </section>
 
-    <!-- Slide 10 -->
-
-
-    <section class="slide-10 scroll-snap" aria-label="Slide 9 - plats préparés scroll-snap">
+    <!-- Slide 10-->
+    <section class="slide slide-10 scroll-snap">
       <header class="slide-10__header">
         <p class="slide-10__intro">
           Les Français jettent chaque année...
         </p>
 
-        <p class="slide-10__percentage">1.2</p>
+        <p class="slide-10__percentage">1.2 M</p>
 
         <p class="slide-10__per-an">millions de tonnes d'emballages plastiques par an et par habitant</p>
       </header>
 
-      <main class="slide-10__content">
-        <figure class="slide-10__dish-left">
-          <img class="slide-10__image" src="./asset/Boite de brocolis.svg" alt="Plat préparé à gauche" />
-        </figure>
+      <div class="slide-10__content">
+        <div class="slide-10__dish-left">
+          <img src="./asset/Boite de brocolis.svg" alt="Boîte en plastique">
+        </div>
 
-        <figure class="slide-10__dish-center">
-          <img class="slide-10__image" src="./asset/Tortue.svg" alt="Plat préparé au centre" />
-        </figure>
+        <div class="slide-10__dish-center">
+          <img src="./asset/Tortue.svg" alt="Tortue marine affectée par la pollution plastique">
+        </div>
 
-        <figure class="slide-10__broccoli">
-          <img class="slide-10__image" src="./asset/Mister brocolis sous leau.svg" alt="Mister Brocoli" />
-        </figure>
-      </main>
+        <div class="slide-10__broccoli">
+          <img src="./asset/Mister brocolis sous leau.svg" alt="Mister Brocoli sous l'eau">
+        </div>
+      </div>
 
-      <div class="slide-10__div">
+      <div class="slide-10__footer">
         <p class="slide-10__description">
           Une grande partie finit dans les océans, polluant la vie marine. Réduire ces déchets est essentiel pour
-          protéger nos
-          mers et notre planète.
+          protéger nos mers et notre planète.
         </p>
 
         <div class="slide__pager">
@@ -302,22 +287,15 @@
       </div>
     </section>
 
-
     <!-- Slide 11 -->
-
-    <section class="slide-11 scroll-snap">
-    
+    <section class="slide slide-11 scroll-snap">
       <p class="slide-11_text">
         Mais le gaspillage et la perte de nourriture entraînent une pollution significative
-
       </p>
     </section>
 
-
-
-    <!-- Slide 12 -->
-
-    <section class="slide-12 scroll-snap" aria-label="Slide 12 - impact environnemental du gaspillage">
+    <!-- Slide 12-->
+    <section class="slide slide-12 scroll-snap">
       <header class="slide-12__header">
         <p class="slide-12__text-main">
           Chaque aliment jeté a nécessité de l'eau, de l'énergie et des terres pour être
@@ -326,200 +304,282 @@
         </p>
 
         <p class="slide-12__text-sub">
-          Au total, le gaspillage alimentaire génère 3,3 milliards de tonnes de CO₂ par
+          Au total, le gaspillage alimentaire génère <span>3,3 milliards</span> de tonnes de CO₂ par
           an dans le monde, soit l'équivalent des émissions annuelles de 700 millions
           de voitures.
         </p>
-
       </header>
 
-      <figure class="slide-12__greenhouse">
-        <img class="slide-12__image" src="./asset/Serre.svg" alt="Serre avec nuage de gaz à effet de serre" />
-      </figure>
+      <div class="slide-12__greenhouse">
+        <img src="./asset/Serre.svg" alt="Serre agricole avec émissions de gaz à effet de serre">
+      </div>
 
-      <figure class="slide-12__broccoli">
-        <img class="slide-12__image" src="./asset/Mister brocolis normal.svg" alt="Mister Brocoli" />
-      </figure>
-
+      <div class="slide-12__broccoli">
+        <img src="./asset/Mister brocolis normal.svg" alt="Mister Brocoli">
+      </div>
 
       <div class="slide__pager">
         <span class="slide__pager-text">12/26</span>
       </div>
-
     </section>
+
+    <!-- Slide 13-->
+    <section class="slide slide-13 scroll-snap">
+      <header class="slide-13__header">
+        <h2 class="slide-13__title">
+          Secteurs les plus émetteur de gaz à effet de serre à l'échelle mondiale :
+        </h2>
+
+        <p class="slide-13__text">
+          La production de viande, les cultures intensives et le transport des aliments sont parmi les
+          principaux responsables des émissions de gaz à effet de serre dans l'alimentation. L'alimentation
+          arrive en troisième position des secteurs les plus polluants après les transports et les
+          habitations, représentant environ un quart de notre empreinte carbone individuelle.
+        </p>
+      </header>
+
+      <div class="slide-13__inner">
+        <div class="slide-13__image">
+          <img src="./asset/Podium.svg" alt="Podium des secteurs les plus émetteurs de gaz à effet de serre">
+        </div>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">13/26</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 14-->
+    <section class="slide slide-14 scroll-snap">
+      <header class="slide-14__header">
+        <h2 class="slide-14__title">
+          <span>2 tiers</span> des émissions de l'alimentation concernent l'étape de production agricole
+        </h2>
+        <p class="slide-14__text">
+          Cela représente environ <span>1,4 tonnes</span> CO₂ par an et par personne, soit l'équivalent
+          de laisser une ampoule allumée en continu pendant 15 ans.
+        </p>
+      </header>
+
+      <div class="slide-14__figure">
+        <img src="./asset/agriculture.svg" alt="Production agricole et ses émissions">
+      </div>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">14/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 15-->
+    <section class="slide slide-15 scroll-snap">
+      <h2 class="slide-15__title">
+        L'agriculture occupe....
+      </h2>
+      <p class="slide-15__subtitle">
+        du territoire, destinée à des productions alimentaires.
+      </p>
+
+      <div class="slide-15__figure">
+        <img src="./asset/France.svg" alt="Carte des surfaces agricoles en France">
+      </div>
+
+      <p class="slide-15__text">
+        Parmi ces surfaces, <span>77%</span> sont consacrées à l'élevage et à la production d'aliments
+        pour les animaux, contre seulement <span>23%</span> pour les cultures destinées directement
+        à l'alimentation humaine.
+      </p>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">15/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 16-->
+    <section class="slide slide-16 scroll-snap">
+      <header class="slide-16__header">
+        <h2 class="slide-16__title">
+          L'expension agricole est responsable de <span>90%</span> de la déforestation mondiale
+        </h2>
+
+        <p class="slide-16__text">
+          Des forêts entières disparaissent pour laisser place à des cultures ou des pâturages, principalement pour
+          l'élevage et
+          la production de soja destiné à nourrir les animaux. Chaque année, c'est l'équivalent de 10 millions
+          d'hectares de
+          forêts qui sont détruits, soit la surface de l'Islande.
+        </p>
+      </header>
+
+      <div class="slide-16__inner">
+        <div class="slide-16__image">
+          <img src="./asset/Deforestation.svg" alt="Illustration de la déforestation mondiale">
+        </div>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">16/26</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 17-->
+    <section class="slide slide-17 scroll-snap">
+      <header class="slide-17__header">
+        <p class="slide-17__text">
+          Cette eau irrigue les champs, remplit les abreuvoirs des animaux et entre dans de nombreuses étapes de
+          transformation
+          des aliments. Chaque repas que nous préparons repose donc sur une quantité d'eau bien plus importante qu'on ne
+          l'imagine, comme un fil invisible qui relie nos assiettes aux rivières et aux nappes souterraines.
+        </p>
+        <h2 class="slide-17__title">
+          L'empreinte eau utilisé pour la production est ...
+        </h2>
+      </header>
+
+      <div class="slide-17__inner">
+        <div class="slide-17__image">
+          <img src="./asset/Litre eau.svg" alt="Représentation de l'empreinte eau de la production alimentaire">
+        </div>
+
+        <div class="slide__pager">
+          <span class="slide__pager-text">17/26</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 18 -->
+    <section class="slide slide-18 scroll-snap">
+      <div class="slide-inner-18">
+        <div class="slide-18__figure">
+          <img src="./asset/Viande.svg" alt="Viande et produits laitiers">
+        </div>
+
+        <header class="slide-18__header">
+          <p class="slide-18__text">
+            La viande, les produits laitiers et les œufs représentent
+          </p>
+          <p class="slide-18__percentage">61%</p>
+          <p class="slide-18__text">de l'empreinte carbone de notre alimentation</p>
+        </header>
+
+        <div class="slide-18__description-wrapper">
+          <p class="slide-18__description">
+            Produire 1 kg de viande de bœuf nécessite 15 000 litres d'eau et 25 kg de céréales, 1 litre de lait demande
+            1
+            000 litres d'eau, et la production d'œufs mobilise d'importantes surfaces agricoles pour nourrir les poules
+            tout
+            au long de leur vie.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">18/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 19-->
+    <section class="slide slide-19 scroll-snap">
+      <header class="slide-19__header">
+        <p class="slide-19__title">
+          L'empreinte carbone de notre alimentation s'élève à ....
+        </p>
+        <p class="slide-19__chiffres">
+          <span class="slide-19__chiffre">2.1 tonnes</span>
+          <span class="slide-19__chiffre-per-an">de CO₂ par an et par personne.</span>
+        </p>
+      </header>
+
+      <div class="slide-19__figure">
+        <img src="./asset/Mister brocolis et le CO2.svg" alt="Mister Brocolis portant des poids de CO₂">
+      </div>
+
+      <p class="slide-19__subtitle">
+        Cela représente environ un quart de notre empreinte carbone totale et équivaut aux
+        émissions d'une voiture parcourant 10000km dans l'année.
+      </p>
+
+      <div class="slide__pager">
+        <span class="slide__pager-text">19/26</span>
+      </div>
+    </section>
+
+    <!-- Slide 20 -->
+    <section class="slide slide-20 scroll-snap">
+      <p class="slide-20_text">
+        Comment aider Mister Brocolis ?!
+      </p>
+    </section>
+
+    <!-- Slide 21-->
+  <section class="slide-21 scroll-snap">
+    <div class="slideinner">
+      <div class="card-rotation">
+        <header class="card-devant">
+          <h1>Privilégier les produits locaux et de saisons</h1>
+        </header>
+        <figure class="card-derriere">
+          <div class="card-text">
+            <p><span>Acheter local</span> permet de limiter considérablement les émissions liées au transport des
+              aliments. Un fruit importé par avion peut émettre jusqu'à 10 fois plus de CO₂ qu'un fruit cultivé dans votre
+              région.<br><br>
+              <span>Consommer des fruits et légumes de saison</span> signifie éviter les serres chauffées qui
+              consomment énormément d'énergie. Une tomate sous serre en hiver émet 6 fois plus de gaz à effet de serre
+              qu'une tomate d'été en plein champ.
+            </p>
+          </div>
+          <img class="card-img" src="./asset/Sac course.svg" alt="Planète">
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+  <section class="slide-22 scroll-snap">
+    <div class="slideinner">
+      <div class="card-rotation">
+        <header class="card-devant">
+          <h1>Manger bio, des légumes et moins de viandes</h1>
+        </header>
+        <figure class="card-derriere">
+          <div class="card-text">
+            <p><span>L'agriculture biologique</span> n'utilise pas de pesticides chimiques de synthèse, préservant
+              ainsi la qualité des sols et de l'eau. Les cultures bio émettent moins de CO₂ que l'agriculture
+              conventionnelle grâce à des pratiques plus respectueuses de l'environnement.<br><br>
+              <span>Remplacer une portion de viande</span> par des légumineuses permet de diviser considérablement les
+              émissions de gaz à effet de serre de votre repas.
+            </p>
+          </div>
+          <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+          <dotlottie-wc src="https://lottie.host/f98f17bf-b73e-44e6-a8b8-e7857ed577bc/OLu9bUOWp7.lottie"
+            style="width: 14rem; height: 14rem" autoplay loop></dotlottie-wc>
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+  <section class="slide-23 scroll-snap">
+    <div class="slideinner">
+      <div class="card-rotation">
+        <header class="card-devant">
+          <h1>Faire attention aux quantités lors des courses</h1>
+        </header>
+        <figure class="card-derriere">
+          <div class="card-text">
+            <p><span>Établir une liste de courses</span> en fonction des menus de la semaine permet d'acheter
+              uniquement ce dont on a besoin. Cette simple habitude évite les achats impulsifs et réduit
+              considérablement
+              le gaspillage alimentaire à la maison.<br><br>
+              <span>Acheter en gros</span> n'est pas toujours économique si les aliments finissent à la poubelle.
+              Il
+              vaut mieux privilégier des portions adaptées à ses besoins réels, quitte à faire ses courses plus
+              régulièrement, pour éviter que les produits ne périment avant d'être consommés.
+            </p>
+          </div>
+          <img class="card-img" src="./asset/Panier.svg" alt="Panier">
+        </figure>
+      </div>
+    </div>
+  </section>
   </main>
-
-
-  <!-- Slide 13 -->
-
-  <section class="slide-13 scroll-snap">
-
-    <header class="slide-13__header">
-      <h2 class="slide-13__title">
-        Secteurs les plus émetteur de gaz à effet de serre à l’échelle mondiale :
-      </h2>
-
-      <p class="slide-13__text">
-        La production de viande, les cultures intensives et le transport des aliments sont parmi les
-        principaux responsables des émissions de gaz à effet de serre dans l'alimentation. L'alimentation
-        arrive en troisième position des secteurs les plus polluants après les transports et les
-        habitations, représentant environ un quart de notre empreinte carbone individuelle.
-      </p>
-    </header>
-    <div class="slide-13__inner">
-
-      <div class="slide-13__image">
-        <img src="./asset/Podium.svg" alt="Podium des émissions de gaz à effet de serre" />
-      </div>
-
-      <div class="slide__pager">
-        <span class="slide__pager-text">13/26</span>
-      </div>
-
-    </div>
-  </section>
-
-<!-- Slide 14 -->
-
-<section class="slide-14 scroll-snap">
-  <header class="slide-14__header">
-    <h2 class="slide-14__title">
-      2 tiers des émissions de l’alimentation concernent l’étape de production agricole
-    </h2>
-    <p class="slide-14__text">
-      Cela représente environ 1,4 tonne de CO₂ par an et par personne, soit l'équivalent
-      de laisser une ampoule allumée en continu pendant 15 ans.
-    </p>
-  </header>
-
-  <figure class="slide-14__figure">
-    <img src="./asset/agriculture.svg" alt="Production agricole" />
-  </figure>
-
-  <div class="slide__pager">
-    <span class="slide__pager-text">14/26</span>
-  </div>
-
-</section>
-
-<!-- Slide 15 -->
-
-<section class="slide-15 scroll-snap">
-
-    <h2 class="slide-15__title">
-      L’agriculture occupe....
-    </h2>
-    <p class="slide-15__subtitle">
-      du territoire, destinée à des productions alimentaires.
-    </p>
-
-  <figure class="slide-15__figure">
-    <img src="./asset/France.svg" alt="Carte des surfaces agricoles" />
-  </figure>
-
-  <p class="slide-15__text">
-    Parmi ces surfaces, 77% sont consacrées à l'élevage et à la production d'aliments
-    pour les animaux, contre seulement 23% pour les cultures destinées directement
-    à l'alimentation humaine.
-  </p>
-
-  <div class="slide__pager">
-    <span class="slide__pager-text">15/26</span>
-  </div>
-
-</section>
-
-
-<!-- Slide 16 -->
-
-
-  <section class="slide-16 scroll-snap">
-  
-    <header class="slide-16__header">
-      <h2 class="slide-16__title">
-      L’expension agricole est responsable de <span> 90% </span> de la déforestation mondiale
-      </h2>
-  
-      <p class="slide-16__text">
-        Des forêts entières disparaissent pour laisser place à des cultures ou des pâturages, principalement pour l'élevage et
-        la production de soja destiné à nourrir les animaux. Chaque année, c'est l'équivalent de 10 millions d'hectares de
-        forêts qui sont détruits, soit la surface de l'Islande.
-      </p>
-    </header>
-    <div class="slide-16__inner">
-  
-      <div class="slide-16__image">
-        <img src="./asset/Deforestation.svg" alt="Podium des émissions de gaz à effet de serre" />
-      </div>
-  
-      <div class="slide__pager">
-        <span class="slide__pager-text">16/26</span>
-      </div>
-  
-    </div>
-  </section>
-
-
-<!-- Slide 17 -->
-
-  <section class="slide-17 scroll-snap">
-  
-    <header class="slide-17__header">
-      <p class="slide-17__text">
-        Cette eau irrigue les champs, remplit les abreuvoirs des animaux et entre dans de nombreuses étapes de transformation
-        des aliments. Chaque repas que nous préparons repose donc sur une quantité d’eau bien plus importante qu’on ne
-        l’imagine, comme un fil invisible qui relie nos assiettes aux rivières et aux nappes souterraines.
-      </p>
-      <h2 class="slide-17__title">
-      L’empreinte eau utilisé pour la production est ...
-      </h2>
-  
-    </header>
-    <div class="slide-17__inner">
-  
-      <div class="slide-17__image">
-        <img src="./asset/Litre eau.svg" alt="Podium des émissions de gaz à effet de serre" />
-      </div>
-  
-      <div class="slide__pager">
-        <span class="slide__pager-text">17/26</span>
-      </div>
-  
-    </div>
-  </section>
-
-
-<!-- Slide 18 -->
-<section class="slide-18 scroll-snap">
-  <header class="slide-18__header">
-    <p class="slide-18__title">
-      L’empreinte carbone de notre alimentation s’élève à ....
-    </p>
-    <p class="slide-18__chiffres">
-      <span class="slide-18__chiffre">2.1tonnes</span>
-      <span class="slide-18__chiffre-per-an">de CO₂ par an et par personne.</span>
-    </p>
-  </header>
-
-  <figure class="slide-18__figure">
-    <img src="./asset/Mister brocolis et le CO2.svg"
-      alt="Mister Brocolis portant des poids de CO₂" />
-  </figure>
-
-  <p class="slide-18__subtitle">
-    Cela représente environ un quart de notre empreinte carbone totale et équivaut aux
-    émissions d'une voiture parcourant 10000km dans l'année.
-  </p>
-
-  <div class="slide__pager">
-    <span class="slide__pager-text">18/26</span>
-  </div>
-</section>
-
-
-  <!-- Slide 19 -->
-
-
 
 </body>
 
