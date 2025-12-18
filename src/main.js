@@ -853,7 +853,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // EFFET PARALLAXE pour les brocolis
     gsap.utils.toArray('.slide-2__brocoli, .slide-3__brocoli, .slide-12__broccoli').forEach(element => {
         gsap.to(element, {
             scrollTrigger: {
@@ -867,6 +866,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    console.log('✅ Animations GSAP avec barre de progression chargées !');
 });
 
