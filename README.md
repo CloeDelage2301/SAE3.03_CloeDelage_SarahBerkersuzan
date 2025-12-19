@@ -1,4 +1,4 @@
-# SAé 3.01 : Intégration et Développement de Parcours Utilisateurs
+## SAÉ 3.Crea.03 | Concevoir des visualisations de données pour le web et un support animé
 
 > **Projet :**SAÉ 3.Crea.03 | Concevoir des visualisations de données pour le web et un support animé
 > **Groupe :** Cloé et Sarah
@@ -21,5 +21,3 @@ https://www.figma.com/design/jYBpwGwo2TUJX3cuhlNdUb/SAE303?node-id=466-4&t=cYRkN
 
 
 
-
-*Projet réalisé à l'IUT du Limousin - Département MMI - 2024/2025*
